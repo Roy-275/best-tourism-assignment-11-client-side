@@ -6,6 +6,7 @@ import Login from './components/Login/Login';
 import ManageAll from './components/Manage All/ManageAll';
 import Manage from './components/Manage/Manage';
 import NotFound from './components/Not Found/NotFound';
+import PrivateRoute from './components/Private Route/PrivateRoute';
 import Register from './components/Register/Register';
 import AuthProvider from './Context/AuthProvider';
 
@@ -31,17 +32,17 @@ function App() {
               <Login></Login>
             </Route>
 
-            <Route path="/addservice">
+            <PrivateRoute path="/addservice">
               <AddService></AddService>
-            </Route>
+            </PrivateRoute>
 
-            <Route path="/manage">
+            <PrivateRoute path="/manage">
               <Manage></Manage>
-            </Route>
+            </PrivateRoute>
 
-            <Route path="/manageall">
+            <PrivateRoute path="/manageall">
               <ManageAll></ManageAll>
-            </Route>
+            </PrivateRoute>
 
             <Route path="*">
               <NotFound></NotFound>

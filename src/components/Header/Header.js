@@ -48,7 +48,7 @@ export default function Header({ fixed }) {
                         }
                         id="example-navbar-danger"
                     >
-                        <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+                        {user.email ? <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
                             <li className="nav-item">
                                 <Link
                                     className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
@@ -85,6 +85,17 @@ export default function Header({ fixed }) {
                                 </Link>
                             </li>
                         </ul>
+                            : <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+                                <li className="nav-item">
+                                    <Link
+                                        className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                                        to="/home"
+                                    >
+                                        <span className="ml-2">Home</span>
+                                    </Link>
+                                </li>
+                            </ul>
+                        }
                     </div>
                 </div>
             </nav>
