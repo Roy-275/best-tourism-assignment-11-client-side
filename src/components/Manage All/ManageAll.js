@@ -2,14 +2,14 @@ import React from 'react';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 
-const Manage = () => {
+const ManageAll = () => {
     return (
         <div>
             <Header></Header>
-            This is manage my tour plans
+            This is manage all page
             <Footer></Footer>
         </div>
     );
 };
 
-export default Manage;
+export default ManageAll;
