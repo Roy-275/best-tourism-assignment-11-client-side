@@ -3,9 +3,9 @@ import './Banner.css';
 
 const Banner = () => {
     return (
-        <div className="md:h-screen banner text-left md:p-6">
+        <div className="banner text-left md:px-24 md:py-5">
             <div className="md:w-1/2">
-                <div className="rounded-lg bg-black bg-opacity-50">
+                <div className="md:rounded-lg bg-black bg-opacity-50">
                     <h1 className="md:text-6xl sm:text-3xl font-bold text-gray-200 p-5 "> Travel Smooth </h1>
                     <h2 className="md:text-2xl sm:text-lg text-white p-5 ">
                         With our all in one platform for booking and managing trains, flights, hotels and car hire with 24/7 customer support, business travel has never been smoother.
