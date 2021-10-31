@@ -25,7 +25,7 @@ const PlaceOrder = () => {
         const status = 'Pending';
 
         const newOrder = { name, email, orderTitle, price, address, mobileNumber, status };
-        fetch('http://localhost:5000/orders', {
+        fetch('https://bloodcurdling-warlock-35232.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -46,7 +46,7 @@ const PlaceOrder = () => {
     const [singleOrder, setSingleOrder] = useState({});
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://bloodcurdling-warlock-35232.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setOrder(data))
     }, []);

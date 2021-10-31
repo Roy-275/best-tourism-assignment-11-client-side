@@ -8,7 +8,7 @@ const ManageAll = () => {
 
     //UPDATE an tour to confirmed from pending
     const handleUpdateStatus = (id) => {
-        const url = `http://localhost:5000/orders/${id}`;
+        const url = `https://bloodcurdling-warlock-35232.herokuapp.com/orders/${id}`;
 
         fetch(url)
             .then(res => res.json())
@@ -31,7 +31,7 @@ const ManageAll = () => {
     }
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://bloodcurdling-warlock-35232.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])
@@ -41,7 +41,7 @@ const ManageAll = () => {
     const handleCancelTour = id => {
         const proceed = window.confirm('Are you sure, You want to cancel tour?');
         if (proceed) {
-            const url = `http://localhost:5000/orders/${id}`;
+            const url = `https://bloodcurdling-warlock-35232.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

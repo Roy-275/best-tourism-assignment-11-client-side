@@ -17,7 +17,7 @@ const AddService = () => {
         const image = imageRef.current.value;
 
         const newService = { name, detail, price, rating, image };
-        fetch('http://localhost:5000/services', {
+        fetch('https://bloodcurdling-warlock-35232.herokuapp.com/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
