@@ -72,13 +72,13 @@ const PlaceOrder = () => {
                 <div className="md:w-1/2 md:ml-3 md:px-3 py-2 bg-blue-100">
                     <h2 className="md:text-5xl sm:text-2xl font-bold text-pink-700 md:px-5 sm:p-1">Place Your Order</h2>
                     <form className="flex flex-col items-center py-4 md:rounded-lg" onSubmit={handlePlaceOrder}>
-                        <input ref={nameRef} className="border-2 border-black w-4/6 mb-2" type="text" value={user.displayName} />
+                        <input ref={nameRef} className="border-2 border-black w-4/6 mb-2" type="text" defaultValue={user.displayName} />
 
-                        <input ref={emailRef} className="border-2 border-black w-4/6 mb-2" type="email" value={user.email} />
+                        <input ref={emailRef} className="border-2 border-black w-4/6 mb-2" type="email" defaultValue={user.email} />
 
-                        <input ref={orderTitleRef} className="border-2 border-black w-4/6 mb-2" type="text" value={singleOrder?.name} />
+                        <input ref={orderTitleRef} className="border-2 border-black w-4/6 mb-2" type="text" defaultValue={singleOrder?.name} />
 
-                        <input ref={priceRef} className="border-2 border-black w-4/6 mb-2" type="number" value={singleOrder?.price} />
+                        <input ref={priceRef} className="border-2 border-black w-4/6 mb-2" type="number" defaultValue={singleOrder?.price} />
 
                         <textarea ref={addressRef} className="border-2 border-black w-4/6 mb-2" name="" id="" cols="30" rows="3" placeholder="Your Address" required></textarea>
 
