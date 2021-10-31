@@ -105,8 +105,8 @@ const Register = () => {
             {/* Login with google button */}
             <div className="my-3">
                 <h3 className="text-2xl mb-2 text-red-600 font-bold">Or Join With</h3>
-                <button onClick={handleGoogleLogin} className="border-2 p-2 rounded-lg bg-yellow-500 text-red-700 font-bold text-3xl">
-                    <i class="fab fa-google"></i>
+                <button onClick={handleGoogleLogin} className="border-2 p-2 rounded-lg bg-yellow-500 hover:bg-yellow-400 text-red-700 font-bold text-3xl">
+                    <i className="fab fa-google"></i>
                 </button>
             </div>
 

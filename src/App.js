@@ -6,6 +6,7 @@ import Login from './components/Login/Login';
 import ManageAll from './components/Manage All/ManageAll';
 import Manage from './components/Manage/Manage';
 import NotFound from './components/Not Found/NotFound';
+import PlaceOrder from './components/Place Order/PlaceOrder';
 import PrivateRoute from './components/Private Route/PrivateRoute';
 import Register from './components/Register/Register';
 import AuthProvider from './Context/AuthProvider';
@@ -34,6 +35,10 @@ function App() {
 
             <PrivateRoute path="/addservice">
               <AddService></AddService>
+            </PrivateRoute>
+
+            <PrivateRoute path="/services/:serviceId">
+              <PlaceOrder></PlaceOrder>
             </PrivateRoute>
 
             <PrivateRoute path="/manage">

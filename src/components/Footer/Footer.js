@@ -13,9 +13,9 @@ const Footer = () => {
             </p>
             <p className="text-xs mt-3">&copy; Copyright 2021 Anik Roy &nbsp;&nbsp; |&nbsp;&nbsp; All right reserved</p>
             <p className="text-4xl text-blue-200 mt-4">
-                <a href="www.facebook.com"><i class="fab fa-facebook-square mx-3"></i></a>
-                <a href="www.twitter.com"><i class="fab fa-twitter-square mx-3"></i></a>
-                <a href="www.linkedin.com"><i class="fab fa-linkedin mx-3"></i></a>
+                <a href="www.facebook.com"><i className="fab fa-facebook-square mx-3"></i></a>
+                <a href="www.twitter.com"><i className="fab fa-twitter-square mx-3"></i></a>
+                <a href="www.linkedin.com"><i className="fab fa-linkedin mx-3"></i></a>
             </p>
         </div>
     );

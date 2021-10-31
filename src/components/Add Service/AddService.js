@@ -36,20 +36,22 @@ const AddService = () => {
     }
 
     return (
-        <div>
+        <div className="bg-blue-100">
             <Header></Header>
-            <form className="flex flex-col items-center bg-blue-100 md:py-4" onSubmit={handleAddService}>
-                <input ref={nameRef} className="border-2 border-black w-2/6 mb-2" type="text" placeholder="Service Name" />
+            <h2 className="md:text-5xl sm:text-2xl font-bold text-pink-700 md:px-5 sm:p-1">Add Service Here</h2>
 
-                <textarea ref={detailRef} className="border-2 border-black w-2/6 mb-2" name="" id="" cols="30" rows="5" placeholder="Service Description"></textarea>
+            <form className="flex flex-col items-center md:py-4 sm:py-3" onSubmit={handleAddService}>
+                <input ref={nameRef} className="border-2 border-black md:w-2/6 sm:w-5/6 mb-2" type="text" placeholder="Service Name" required />
 
-                <input ref={priceRef} className="border-2 border-black w-2/6 mb-2" type="number" placeholder="Price" />
+                <textarea ref={detailRef} className="border-2 border-black md:w-2/6 sm:w-5/6 mb-2" name="" id="" cols="30" rows="5" placeholder="Service Description" required></textarea>
 
-                <input ref={ratingRef} className="border-2 border-black w-2/6 mb-2" type="number" placeholder="Rating" />
+                <input ref={priceRef} className="border-2 border-black md:w-2/6 sm:w-5/6 mb-2" type="number" placeholder="Price" required />
 
-                <input ref={imageRef} className="border-2 border-black w-2/6 mb-2" type="text" placeholder="Image url" />
+                <input ref={ratingRef} className="border-2 border-black md:w-2/6 sm:w-5/6 mb-2" type="number" placeholder="Rating" required />
 
-                <input className="w-1/6 mb-2 bg-purple-400 hover:bg-purple-500 text-red-800 font-bold md:text-2xl cursor-pointer" type="submit" name="Submit" />
+                <input ref={imageRef} className="border-2 border-black md:w-2/6 sm:w-5/6 mb-2" type="text" placeholder="Image url" required />
+
+                <input className="md:w-1/6 sm:w-2/6 bg-purple-400 hover:bg-purple-500 text-red-800 font-bold md:text-2xl sm:text-lg cursor-pointer" type="submit" name="Submit" />
             </form>
             <Footer></Footer>
         </div>
